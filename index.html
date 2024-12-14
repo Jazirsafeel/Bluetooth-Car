@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Download</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header img {
+            max-width: 200px; /* Adjust logo size */
+            height: auto;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+        }
+        .file-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
+        .file-item {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+        }
+        .file-item a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #007bff;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .file-item a:hover {
+            background-color: #0056b3;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="eee.png" alt="Logo"> <!-- Replace with your logo path -->
+    </div>
+    <div class="container">
+        <h1>Download Files</h1>
+        <div class="file-list">
+            <div class="file-item">
+                <p>Human_Follow</p>
+                <a href="Human_Follow.zip" download>Download</a>
+            </div>
+            <div class="file-item">
+                <p>Bluetooth_manual</p>
+                <a href="bluetooth_manual.zip" download>Download</a>
+            </div>
+            <div class="file-item">
+                <p>Obstacle_Avoid</p>
+                <a href="Obstacle_Avoid.zip" download>Download</a>
+            </div>
+            <div class="file-item">
+                <p>Bluetooth_Obstacle_human</p>
+                <a href="Bluetooth_Obstacle_human.zip" download>Download</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
